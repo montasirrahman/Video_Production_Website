@@ -1,0 +1,71 @@
+
+
+.cursor_0 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursor_0Anim 0.5s infinite alternate;
+  pointer-events: none;
+  z-index: 133333333333333333;
+}
+
+.cursor_0::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  animation: cursor_0Anim2 0.5s infinite alternate;
+}
+
+@keyframes cursor_0Anim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes cursor_0Anim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+@keyframes cursor_0Anim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.expand {
+  animation: cursor_0Anim3 0.5s forwards;
+  border: 1px solid red;
+}
+
+p {
+  color: white;
+  font-family: "arial";
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.4em;
+}
+p a {
+  color: teal;
+}
