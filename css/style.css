@@ -205,6 +205,12 @@ a,button {
   left: 0;
   z-index: -1;
   background-color: #13242F;
+
+
+   background-image: url(../img/background/01.JPG);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
 }
 #videoContact {
     width: 100vw;
